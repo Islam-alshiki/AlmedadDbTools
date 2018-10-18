@@ -115,6 +115,8 @@ tableName : student_info
     <td>
       Libay
     </td>
+  </tr>
+  <tr>
     <td>
       2
     </td>
@@ -127,6 +129,8 @@ tableName : student_info
     <td>
       3
     </td>
+  </tr>
+  <tr>
     <td>
       ahmed
     </td>
@@ -135,6 +139,7 @@ tableName : student_info
     </td>
   </tr>
 </table>
+
 ``` csharp
   
   //create String variable for connectionString
