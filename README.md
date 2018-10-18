@@ -63,7 +63,7 @@ public DataTable getAllFrom(String tableName)
   </li>
   <li>
     public int getResultFromSp(String PeocName, List<Field> filds) (Used in stored procedures that insert, update or delete only )
-    <p>Takes an String for the stored procedures namem, and a list of Field object contains the pharametrs with values, it's retirn an int as a number of changes in database <p>
+    <p>Takes an String for the stored procedures name, and a list of Field object contains the pharametrs with values, it's retirn an int as a number of changes in database <p>
   
 ``` csharp
   // insert new student
@@ -115,7 +115,6 @@ tableName : student_info
     <td>
       Libay
     </td>
-    
     <td>
       2
     </td>
@@ -125,5 +124,43 @@ tableName : student_info
     <td>
       Libay
     </td>
+    <td>
+      3
+    </td>
+    <td>
+      ahmed
+    </td>
+    <td>
+      Egypt
+    </td>
   </tr>
 </table>
+``` csharp
+  
+  //create String variable for connectionString
+  String _cs = "";
+  
+  //Create an object of dbConncector
+  dbConncector db = new dbConncector(_cs);
+  
+  //get all student
+  DataTable result = db.getAllFrom("student_info");
+  // the object result has the result
+    
+  //get only students from libya
+  Field v1 = new Field("student_location" , "Libya");
+  List<Field> values = new List<Field>();
+  values.add(v1);
+  DataTable result = db.getAllFrom("student_info" , values);
+  // the object result has the result
+  
+  //insert useings tored procedures sp_insert_into_student_info
+  Field v1 = new Field("student_name" , "mostafa");
+  Field v2 = new Field("student_location" , "Libya");
+  List<Field> values = new List<Field>();
+  values.add(v1);
+  values.add(v2);
+  int result = db.getResultFromSp("sp_insert_into_student_info" , values);
+  // result must = 1
+  
+```
