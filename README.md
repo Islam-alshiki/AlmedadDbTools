@@ -8,18 +8,20 @@ small tool to select, insert update and delete from SQL databases
     <p>Takes an String SonnectionString to init the object to use later.<p>
     
     ``` csharp
-    String ConnectionStrong = "";
-    dbConncector db = new dbConncector(ConnectionStrong);
+      String ConnectionStrong = "";
+      dbConncector db = new dbConncector(ConnectionStrong);
     ```
-  </li>
-      <li>
+    
+</li>
+<li>
         Constructor : public dbConncector(SqlConnection con)
 <p>Takes an System.Data.SqlClint.SqlConnection to init the object to use later.<p>
   
     ``` csharp
-    sqlConnection con = new sqlConnection();
-    dbConncector db = new dbConncector(con);
+      sqlConnection con = new sqlConnection();
+      dbConncector db = new dbConncector(con);
     ```
+    
   </li>
 </ul>
 
@@ -30,31 +32,34 @@ public DataTable getAllFrom(String tableName)
 <p>Takes an String for the table to get all rows and return a System.Data.DataTable object.<p>
   
     ``` csharp
-    dbConncector db = new dbConncector(con);
-    DataTable result = db.getAllFrom("tableName");
+      dbConncector db = new dbConncector(con);
+      DataTable result = db.getAllFrom("tableName");
     ```
+    
   </li>
   <li>
     public DataTable exec(String queiry)
     <p>Takes an String for the queiry and return a System.Data.DataTable object.<p>
     
     ``` csharp
-    dbConncector db = new dbConncector(con);
-    DataTable result = db.exec("select * from tableName");
+      dbConncector db = new dbConncector(con);
+      DataTable result = db.exec("select * from tableName");
     ```
+    
   </li>
   <li>
     public DataTable getAllFrom(String PeocName, List<Field> filds)
     <p>Takes an String for the table name, and a list of Field object contains the pharametrs with values to get only specific rows and return a System.Data.DataTable object.<p>
     
     ``` csharp
-    // Select from student table the student they live in libya.
-    dbConncector db = new dbConncector(con);
-    Field v1 = new Field("student_location" , "Libya");
-    List<Field> values = new List<Field>();
-    values.add(v1);
-    DataTable result = db.getAllFrom("student_table" , values);
+      // Select from student table the student they live in libya.
+      dbConncector db = new dbConncector(con);
+      Field v1 = new Field("student_location" , "Libya");
+      List<Field> values = new List<Field>();
+      values.add(v1);
+      DataTable result = db.getAllFrom("student_table" , values);
     ```
+    
   </li>
   <li>
     public int getResultFromSp(String PeocName, List<Field> filds) (Used in stored procedures that insert, update or delete only )
@@ -69,8 +74,8 @@ public DataTable getAllFrom(String tableName)
     values.add(v1);
     values.add(v2);
     int result = db.getAllFrom("student_table" , values);
-    ```
-  </li>
+  ```
+</li>
 </ul>
 
 # class Field use
