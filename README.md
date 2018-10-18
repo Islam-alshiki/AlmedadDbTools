@@ -7,10 +7,10 @@ small tool to select, insert update and delete from SQL databases
     Constructor : public dbConncector(String connStr)
     <p>Takes an String SonnectionString to init the object to use later.<p>
     
-    ``` csharp
-      String ConnectionStrong = "";
-      dbConncector db = new dbConncector(ConnectionStrong);
-    ```
+``` csharp
+  String ConnectionStrong = "";
+  dbConncector db = new dbConncector(ConnectionStrong);
+```
     
 </li>
 <li>
