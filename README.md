@@ -12,6 +12,7 @@ small tool to select, insert update and delete from SQL databases
 <p>Takes an System.Data.SqlClint.SqlConnection to init the object to use later.<p>
         </li>
 </ul>
+
 # dbConncector Methods
 <ul>
   <li>
@@ -31,7 +32,7 @@ small tool to select, insert update and delete from SQL databases
     <p>Takes an String for the stored procedures namem, and a list of Field object contains the pharametrs with values, it's retirn an int as a number of changes in database <p>
   </li>
 </ul>
-<hr>
+
 # class Field use
 Before you pass the Field object see this example.
 
