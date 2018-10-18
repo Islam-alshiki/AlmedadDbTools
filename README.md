@@ -15,9 +15,9 @@ small tool to select, insert update and delete from SQL databases
 
 # dbConncector Methods
 <ul>
-  <li>
-    public DataTable getAllFrom(String tableName)
-    <p>Takes an String for the table to get all rows and return a System.Data.DataTable object.<p>
+<li>
+**public DataTable getAllFrom(String tableName)**
+> Takes an String for the table to get all rows and return a System.Data.DataTable object.
   </li>
   <li>
     public DataTable exec(String queiry)
