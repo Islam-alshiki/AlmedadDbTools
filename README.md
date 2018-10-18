@@ -17,7 +17,7 @@ small tool to select, insert update and delete from SQL databases
 <ul>
 <li>
 public DataTable getAllFrom(String tableName)
-> Takes an String for the table to get all rows and return a System.Data.DataTable object.
+<p>Takes an String for the table to get all rows and return a System.Data.DataTable object.<p>
   </li>
   <li>
     public DataTable exec(String queiry)
