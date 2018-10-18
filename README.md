@@ -126,11 +126,11 @@ tableName : student_info
     <td>
       Libay
     </td>
+     </tr>
+  <tr>
     <td>
       3
     </td>
-  </tr>
-  <tr>
     <td>
       ahmed
     </td>
