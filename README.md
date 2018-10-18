@@ -20,7 +20,7 @@ small tool to select, insert update and delete from SQL databases
     sqlConnection con = new sqlConnection();
     dbConncector db = new dbConncector(con);
     ```
-        </li>
+  </li>
 </ul>
 
 # dbConncector Methods
