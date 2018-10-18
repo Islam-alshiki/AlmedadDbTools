@@ -6,10 +6,20 @@ small tool to select, insert update and delete from SQL databases
   <li>
     Constructor : public dbConncector(String connStr)
     <p>Takes an String SonnectionString to init the object to use later.<p>
+    
+    ``` 
+    String ConnectionStrong = "";
+    dbConncector db = new dbConncector(ConnectionStrong);
+    ```
   </li>
       <li>
         Constructor : public dbConncector(SqlConnection con)
 <p>Takes an System.Data.SqlClint.SqlConnection to init the object to use later.<p>
+  
+    ``` 
+    sqlConnection con = new sqlConnection();
+    dbConncector db = new dbConncector(con);
+    ```
         </li>
 </ul>
 
