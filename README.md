@@ -33,8 +33,9 @@ small tool to select, insert update and delete from SQL databases
 </ul>
 <hr>
 # class Field use
-Before you pass the Field object see this example
-```
+Before you pass the Field object see this example.
+
+``` 
   dbConncector fb = new dbConncector();
   String taegetTable = "sp_login";
   List<Field> fields = new List<Field>();
