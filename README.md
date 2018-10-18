@@ -1,7 +1,7 @@
 # AlmedadDbTools
 small tool to select, insert update and delete from SQL databases
 
-# Methods - Constructors
+# dbConncector Methods - Constructors
 <ul>
   <li>
     Constructor : public dbConncector(String connStr)
@@ -12,8 +12,7 @@ small tool to select, insert update and delete from SQL databases
 <p>Takes an System.Data.SqlClint.SqlConnection to init the object to use later.<p>
         </li>
 </ul>
-<hr>
-# Methods
+# dbConncector Methods
 <ul>
   <li>
     public DataTable getAllFrom(String tableName)
@@ -33,7 +32,7 @@ small tool to select, insert update and delete from SQL databases
   </li>
 </ul>
 <hr>
-# class Field
+# class Field use
 Before you pass the Field object see this example
 <code>
   dbConncector fb = new dbConncector();
