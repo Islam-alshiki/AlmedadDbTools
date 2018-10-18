@@ -89,3 +89,41 @@ Before you pass the Field object see this example.
   fields.Add(new Field("password", "123456")); //  pharameter in sp_login  stored procedures
   DataTable tb = fb.getAllFromSp(taegetTable, fields); // 
 ```
+
+
+# Full Example
+tableName : student_info
+<table>
+  <tr>
+    <td>
+      student_id
+    </td>
+    <td>
+      student_name
+    </td>
+    <td>
+      student_location
+    </td>
+  </tr>
+  <tr>
+    <td>
+      1
+    </td>
+    <td>
+      islam
+    </td>
+    <td>
+      Libay
+    </td>
+    
+    <td>
+      2
+    </td>
+    <td>
+      mdammed
+    </td>
+    <td>
+      Libay
+    </td>
+  </tr>
+</table>
